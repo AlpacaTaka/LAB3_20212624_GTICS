@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class TestController {
     @GetMapping(value = "test")
     public String test() {
-        return "test";
+        return "listarHospitales";
     }
 }
