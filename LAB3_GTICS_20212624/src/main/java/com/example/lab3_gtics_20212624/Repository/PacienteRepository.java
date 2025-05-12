@@ -13,6 +13,13 @@ public interface PacienteRepository extends JpaRepository<Paciente, Integer> {
 
 
 
+
+
+
+
+
+
     @Query("SELECT p FROM Paciente p WHERE p.doctor.id = :doctorId")
     List<Paciente> listarProximasCitas(@Param("doctorId") Integer doctorId);
+
 }
