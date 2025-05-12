@@ -2,9 +2,9 @@ package com.example.lab3_gtics_20212624.controller;
 
 
 import com.example.lab3_gtics_20212624.entity.Hospital;
-import com.example.lab3_gtics_20212624.repository.DoctorRepository;
+import com.example.lab3_gtics_20212624.Repository.DoctorRepository;
 import com.example.lab3_gtics_20212624.repository.HospitalRepository;
-import com.example.lab3_gtics_20212624.repository.PacienteRepository;
+import com.example.lab3_gtics_20212624.Repository.PacienteRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

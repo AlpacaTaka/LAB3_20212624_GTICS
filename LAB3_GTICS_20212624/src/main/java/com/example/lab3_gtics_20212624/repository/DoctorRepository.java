@@ -11,7 +11,11 @@ import java.util.List;
 public interface DoctorRepository extends JpaRepository<Doctor, Integer> {
 
 
+    List<Doctor> findByHospitalId(Integer hospitalId);
+
 
     @Query("SELECT d FROM Doctor d JOIN FETCH d.hospital")
     List<Doctor> obtenerDoctoresConHospital();
+
+
 }

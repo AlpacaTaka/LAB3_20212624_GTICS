@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 
 public class TestController {
-    @GetMapping(value = "test")
+    @GetMapping(value = "")
     public String test() {
-        return "listarHospitales";
+        return "fragments/navbar";
     }
 }
