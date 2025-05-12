@@ -33,4 +33,7 @@ public interface PacienteRepository extends JpaRepository<Paciente, Integer> {
                                        @Param("destinoId") Integer destinoId);
 
 
+
+    //corecciones
+
 }
