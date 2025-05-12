@@ -31,11 +31,12 @@
     <td th:text="${hospital.direccion}">Dirección</td>
     <td th:text="${hospital.telefono}">Telefono</td>
     <td>
-      <a th:href="" class="btn btn-sm btn-danger">Mostrar Doctores</a>
+      <a th:href="@{'/hospital/' + ${hospital.id} + '/doctores'}" class="btn btn-primary">Mostrar Doctores</a>
     </td>
     <td>
-      <a th:href="" class="btn btn-sm btn-danger">Mostrar Pacientes</a>
+      <a th:href="@{'/hospital/' + ${hospital.id} + '/pacientes'}" class="btn btn-success">Mostrar Pacientes</a>
     </td>
+
   </tr>
   </tbody>
 </table>
